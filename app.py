@@ -4,9 +4,9 @@
 
 import streamlit as st
 import pandas as pd
+import numpy as np
 import joblib
-import matplotlib.pyplot as plt
-import seaborn as sns
+import os
 
 from sklearn.metrics import (
     accuracy_score,
@@ -18,8 +18,11 @@ from sklearn.metrics import (
     confusion_matrix
 )
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 # =========================================
-# Page Configuration
+# Page Config
 # =========================================
 
 st.set_page_config(page_title="Adult Income Classifier", layout="wide")
@@ -66,7 +69,7 @@ if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
 
     if "income" not in data.columns:
-        st.error("Uploaded CSV must contain 'income' column.")
+        st.error("Uploaded CSV must contain 'income' column for evaluation.")
     else:
 
         y_true = data["income"]
@@ -74,7 +77,7 @@ if uploaded_file is not None:
 
         selected_model = models[model_choice]
 
-        # Scale only required models
+        # Scale only for certain models
         if model_choice in ["Logistic Regression", "KNN", "Naive Bayes"]:
             X_processed = scaler.transform(X_input)
         else:
@@ -83,7 +86,10 @@ if uploaded_file is not None:
         y_pred = selected_model.predict(X_processed)
         y_prob = selected_model.predict_proba(X_processed)[:, 1]
 
+        # =========================================
         # Metrics
+        # =========================================
+
         accuracy = accuracy_score(y_true, y_pred)
         auc = roc_auc_score(y_true, y_prob)
         precision = precision_score(y_true, y_pred)
@@ -104,7 +110,10 @@ if uploaded_file is not None:
         col3.metric("F1 Score", f"{f1:.4f}")
         col3.metric("MCC", f"{mcc:.4f}")
 
+        # =========================================
         # Confusion Matrix
+        # =========================================
+
         st.subheader("📉 Confusion Matrix")
 
         cm = confusion_matrix(y_true, y_pred)
