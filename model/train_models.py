@@ -216,7 +216,8 @@ for name, model in models.items():
 
     # Save model
     filename = f"model/{name.replace(' ', '_').lower()}.pkl"
-    joblib.dump(model, filename)
+
+    joblib.dump(model, filename, compress=3)
 
 
 
