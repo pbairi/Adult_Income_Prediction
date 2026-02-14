@@ -3,7 +3,6 @@
 
 **M.Tech (AIML/DSE) - BITS Pilani**  
 **Submission Date:** February 15, 2026  
-**Marks:** 15
 
 ---
 
@@ -477,11 +476,6 @@ git push origin main
 - ✅ **Complete evaluation metrics** calculated
 - ✅ **README.md** with comprehensive documentation
 
-### Scoring (Total: 15 Marks):
-- **Models + GitHub (10 marks):** ✅ Complete
-- **Streamlit App (4 marks):** ✅ Complete
-- **BITS Lab Screenshot (1 mark):** 🔄 Required
-
 ---
 
 ## 👨‍💻 Technical Stack
@@ -500,8 +494,6 @@ git push origin main
 **Course:** Machine Learning  
 **Program:** M.Tech (AIML/DSE)  
 **Institution:** BITS Pilani - Work Integrated Learning Programmes
-
-**BITS Lab Issues:** neha.vinayak@pilani.bits-pilani.ac.in
 
 ---
 
@@ -553,10 +545,6 @@ This project successfully implements and compares six machine learning classific
 ---
 
 **Note:** This implementation was performed on BITS Virtual Lab as per assignment requirements.
-
-**Submission Deadline:** February 15, 2026, 23:59 PM
-
-**Assignment Status:** ✅ **COMPLETE AND READY FOR SUBMISSION**
 
 ---
 
