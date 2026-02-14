@@ -12,7 +12,7 @@ Original file is located at
 # Complete model training : train_mpdel.py
 """
 
-# !pip install streamlit
+pip install streamlit
 
 # =========================================
 # Adult Income Classification - Streamlit App
@@ -21,9 +21,9 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import numpy as np
-#import joblib
+import joblib
 import os
-"""
+
 from sklearn.metrics import (
     accuracy_score,
     roc_auc_score,
@@ -36,7 +36,6 @@ from sklearn.metrics import (
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-"""
 
 # =========================================
 # Page Config
