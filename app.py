@@ -12,7 +12,7 @@ Original file is located at
 # Complete model training : train_mpdel.py
 """
 
-!pip install streamlit
+# !pip install streamlit
 
 # =========================================
 # Adult Income Classification - Streamlit App
