@@ -367,48 +367,6 @@ ml-assignment-2/
 
 ---
 
-## 🔍 Future Improvements
-
-1. **Hyperparameter Optimization:**
-   - GridSearchCV or RandomizedSearchCV
-   - Bayesian optimization
-   - Could improve XGBoost to ~88-89%
-
-2. **Feature Engineering:**
-   - Interaction features
-   - Polynomial features
-   - Domain-specific features
-
-3. **Advanced Ensemble Methods:**
-   - Stacking classifiers
-   - Voting ensembles
-   - Combine XGBoost + Random Forest
-
-4. **Deep Learning:**
-   - Neural networks
-   - TabNet for tabular data
-
-5. **Class Imbalance Techniques:**
-   - SMOTE oversampling
-   - Class weight adjustment
-   - Could improve recall further
-
-6. **Feature Selection:**
-   - Recursive Feature Elimination
-   - Mutual information
-   - Reduce model complexity
-
-7. **Cross-Validation:**
-   - K-fold CV for robust estimates
-   - Reduce variance in metrics
-
-8. **Model Explainability:**
-   - SHAP values
-   - LIME
-   - Partial Dependence Plots
-
----
-
 ## 👨‍💻 Technical Stack
 
 - **Programming Language:** Python 3.9+
