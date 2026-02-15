@@ -409,17 +409,6 @@ ml-assignment-2/
 
 ---
 
-## 📝 Assignment Submission Checklist
-
-- ✅ **GitHub Repository** with complete code
-- ✅ **Live Streamlit App** deployed
-- ✅ **Screenshot** from BITS Virtual Lab
-- ✅ **All 6 models** implemented and trained
-- ✅ **Complete evaluation metrics** calculated
-- ✅ **README.md** with comprehensive documentation
-
----
-
 ## 👨‍💻 Technical Stack
 
 - **Programming Language:** Python 3.9+
