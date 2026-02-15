@@ -31,6 +31,22 @@ st.set_page_config(page_title="Adult Income Classifier", layout="wide")
 st.title("💼 Adult Income Classification App")
 st.write("Upload test dataset CSV and evaluate selected model.")
 
+
+
+# =========================================
+# Class Codes
+# =========================================
+
+st.subheader("🏷 Class Codes")
+
+class_codes = pd.DataFrame({
+    "Class Label": [0, 1],
+    "Income Category": [" <= 50K ", " > 50K "]
+})
+
+st.table(class_codes)
+
+
 # =========================================
 # Load Models
 # =========================================
@@ -61,19 +77,6 @@ model_choice = st.selectbox(
     list(models.keys())
 )
 
-
-# =========================================
-# Class Codes
-# =========================================
-
-st.subheader("🏷 Class Codes")
-
-class_codes = pd.DataFrame({
-    "Class Label": [0, 1],
-    "Income Category": [" <=50K ", " >50K "]
-})
-
-st.table(class_codes)
 
 # =========================================
 # Prediction Section
