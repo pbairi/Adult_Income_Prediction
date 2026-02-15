@@ -87,6 +87,21 @@ if uploaded_file is not None:
         y_pred = selected_model.predict(X_processed)
         y_prob = selected_model.predict_proba(X_processed)[:, 1]
 
+
+        # =========================================
+        # Class Codes
+        # =========================================
+
+        st.subheader("🏷 Class Codes")
+
+        class_codes = pd.DataFrame({
+            "Class Label": [0, 1],
+            "Income Category": ["<=50K", ">50K"]
+        })
+
+        st.table(class_codes)
+
+        
         # =========================================
         # Metrics
         # =========================================
