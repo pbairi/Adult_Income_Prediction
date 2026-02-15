@@ -41,7 +41,7 @@ st.subheader("🏷 Class Codes")
 
 class_codes = pd.DataFrame({
     "Class Label": [0, 1],
-    "Income Category": [" <= 50K ", " > 50K "]
+    "Income Category": ["<= 50K", "> 50K"]
 })
 
 st.table(class_codes)
