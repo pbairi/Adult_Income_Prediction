@@ -39,12 +39,13 @@ st.write("Upload test dataset CSV and evaluate selected model.")
 
 st.subheader("🏷 Class Codes")
 
-class_codes = pd.DataFrame({
-    "Class Label": [0, 1],
-    "Income Category": ["<= 50K", "> 50K"]
-})
+st.markdown("""
+| Class Label | Income Category |
+|-------------|-----------------|
+| 0 | ≤ 50K |
+| 1 | > 50K |
+""")
 
-st.table(class_codes)
 
 
 # =========================================
